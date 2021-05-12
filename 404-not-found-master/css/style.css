@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}    
+    
+body{
+    font-family: "Space Mono";
+    margin-top: 40px;
+    margin-left: 77px;
+}
+
+h2{
+    font-family: Inconsolata;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25,18px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+
+img{
+    position: absolute;
+    left: 5.35%;
+    right: 57.21%;
+    top: 24.54%;
+    bottom: 37.11%;
+    width: 539.22px;
+    height: 414.25px;
+}
+
+h1{
+    position: absolute;
+    width: 586px;
+    height: 190px;
+    left: 735px;
+    top: 265px;
+
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    color: #333333;
+}
+
+
+p{
+    position: absolute;
+width: 381px;
+height: 108px;
+left: 736px;
+top: 491px;
+
+font-family: Space Mono;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: -0.035em;
+color: #4F4F4F;
+}
+
+button{
+    position: absolute;
+    width: 216px;
+    height: 68px;
+    left: 740px;
+    top: 663px;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+/* Gray 1 */
+    background: #333333;
+}
+
+/* ----------- ------------------------- */
+
+@media screen and (max-width: 500px){
+
+    body{
+        animation-name: mudaCor;
+        animation-duration: 3s;
+        animation-iteration-count: infinite; 
+    }
+    img{
+    width: 286.83px;
+    height: 220.35px;
+    top: 109px;
+    left: 44px;
+    position: absolute;
+    left: 11.73%;
+    right: 11.78%;
+    top: 11.49%;
+    bottom: 65.29%;
+    animation: gira 5s 1s infinite;
+    }
+
+    h1{
+    position: absolute;
+    width: 350px;
+    height: 142px;
+    left: 24px;
+    top: 407px;
+
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    }
+
+    p{
+    position: absolute;
+    width: 328px;
+    height: 81px;
+    left: 23px;
+    top: 579px;
+
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    }
+
+    button{
+    position: absolute;
+    width: 216px;
+    height: 68px;
+    left: 24px;
+    top: 726px;
+    }
+
+    @keyframes gira {
+        from {
+            transform: rotate(0);
+        }
+
+        to{
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes mudaCor {
+        0%{
+            background-color: white;
+        }
+        25%{
+            background-color: rgb(194, 193, 144);
+        }
+        50%{
+            background-color: rgb(151, 150, 51);
+        }
+        75%{
+            background-color: rgb(189, 186, 46);
+        }
+        100%{
+            background-color: rgb(255, 251, 0);
+        }
+    }
+}
